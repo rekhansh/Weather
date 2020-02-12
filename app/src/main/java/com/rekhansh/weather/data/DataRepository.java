@@ -1,5 +1,6 @@
 package com.rekhansh.weather.data;
 
+import com.rekhansh.weather.data.model.ForecastData;
 import com.rekhansh.weather.data.model.WeatherData;
 
 import retrofit2.Call;
@@ -27,5 +28,9 @@ public class DataRepository
     public Call<WeatherData> getWeatherData(String lat,String lon)
     {
         return weatherService.getWeatherData(lat, lon,KEY,UNIT);
+    }
+    public Call<ForecastData> getForecastData(String lat, String lon)
+    {
+        return weatherService.getForecastData(lat, lon,KEY,UNIT);
     }
 }

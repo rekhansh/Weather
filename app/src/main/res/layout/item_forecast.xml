@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp">
+
+    <TextView
+        android:id="@+id/itemForecastDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Thu 02:30 AM"
+        android:textColor="?colorSurface"/>
+
+    <ImageView
+        android:id="@+id/itemForecastIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/rain"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/itemForecastWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?colorSurface"
+        tools:text="Rain"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/itemForecastTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="20"
+        android:textColor="?colorSurface"
+        android:gravity="center"/>
+</LinearLayout>
