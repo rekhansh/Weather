@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Weather</string>
-    <string name="degree">%.2f &#8451;</string>
+    <string name="degree">&#8451;</string>
+    <string name="n_degree">%.2f &#8451;</string>
 </resources>
